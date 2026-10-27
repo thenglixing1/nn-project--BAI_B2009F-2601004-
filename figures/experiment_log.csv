@@ -2,3 +2,4 @@ exp,what_changed,epochs_run,best_epoch,lr,batch,optimizer,dropout,weight_decay,a
 baseline,Baseline,25,10,0.001,32,adam,0.0,0.0,False,32,0.6797,0.7509,0.7473,0.7275,250117,11.8
 exp1_augment,Add data augmentation,25,25,0.001,32,adam,0.0,0.0,True,32,0.6024,0.7848,0.6428,0.7557,250117,14.1
 exp2_lr,Lower learning rate 1e-3 to 3e-4,25,10,0.0003,32,adam,0.0,0.0,False,32,0.6954,0.7501,0.822,0.6966,250117,14.5
+exp3_aug_long,"Augmentation, train longer (25 to 50 epochs)",50,50,0.001,32,adam,0.0,0.0,True,32,0.3825,0.8669,0.5464,0.8174,250117,36.4
