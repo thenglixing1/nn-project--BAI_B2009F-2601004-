@@ -1,0 +1,2 @@
+exp,what_changed,epochs_run,best_epoch,lr,batch,optimizer,dropout,weight_decay,augment,width,train_loss,train_acc,val_loss,val_acc,params,minutes
+baseline,Baseline,25,10,0.001,32,adam,0.0,0.0,False,32,0.6797,0.7509,0.7473,0.7275,250117,11.8
