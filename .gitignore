@@ -4,4 +4,6 @@ __pycache__/
 data_removed/
 .cache/
 *.pyc
+.DS_Store__pycache__/
+.cache/
 .DS_Store
