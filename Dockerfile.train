@@ -1,0 +1,8 @@
+FROM python:3.14-slim
+WORKDIR /app
+COPY requirements-train.txt .
+RUN pip install --no-cache-dir -r requirements-train.txt
+COPY src/ ./src/
+ENV PYTHONUNBUFFERED=1
+ENTRYPOINT ["python", "src/train.py"]
+CMD ["--name", "docker_final", "--augment", "--epochs", "50", "--note", "Docker training run (augmentation, 50 epochs)"]
