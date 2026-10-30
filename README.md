@@ -1,7 +1,7 @@
 # Malaysian Dish Classification with a Custom CNN
 
 **Course:** BAI13143 Neural Network Basics (Individual Project)
-**Student:** [Your Name] ([Student ID])
+**Student:** [Theng Li Xing] ([BAI_B2009F-2601004])
 
 A convolutional neural network, designed from scratch in PyTorch, that recognises five Malaysian dishes from photos: **laksa, mixed rice, nasi lemak, roti canai and satay**. Training and testing each run in their own Docker container, so the results can be reproduced on a different machine.
 
