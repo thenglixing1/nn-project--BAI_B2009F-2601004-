@@ -1,0 +1,27 @@
+Layer                 Type                Output shape            Params
+------------------------------------------------------------------------
+features.0.0          Conv2d              (32, 128, 128)             896
+features.0.1          BatchNorm2d         (32, 128, 128)              64
+features.0.2          ReLU                (32, 128, 128)               0
+features.0.3          MaxPool2d           (32, 64, 64)                 0
+features.1.0          Conv2d              (64, 64, 64)            18,496
+features.1.1          BatchNorm2d         (64, 64, 64)               128
+features.1.2          ReLU                (64, 64, 64)                 0
+features.1.3          MaxPool2d           (64, 32, 32)                 0
+features.2.0          Conv2d              (128, 32, 32)           73,856
+features.2.1          BatchNorm2d         (128, 32, 32)              256
+features.2.2          ReLU                (128, 32, 32)                0
+features.2.3          MaxPool2d           (128, 16, 16)                0
+features.3.0          Conv2d              (128, 16, 16)          147,584
+features.3.1          BatchNorm2d         (128, 16, 16)              256
+features.3.2          ReLU                (128, 16, 16)                0
+features.3.3          MaxPool2d           (128, 8, 8)                  0
+pool                  AdaptiveAvgPool2d   (128, 1, 1)                  0
+classifier.0          Flatten             (128,)                       0
+classifier.1          Linear              (64,)                    8,256
+classifier.2          ReLU                (64,)                        0
+classifier.3          Dropout             (64,)                        0
+classifier.4          Linear              (5,)                       325
+------------------------------------------------------------------------
+Total parameters:     250,117
+Trainable parameters: 250,117
