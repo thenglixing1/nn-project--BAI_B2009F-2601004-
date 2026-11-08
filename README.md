@@ -113,7 +113,17 @@ Full log: `figures/experiment_log.csv`. Curves: `figures/*_curves.png`.
 
 ## Final result (test set)
 
-[Fill in from `models/final/test_metrics.json` after the final test run: accuracy, macro F1, comparison with the target and with the majority-class baseline.]
+The final model (Experiment 3 configuration, trained on my laptop) was evaluated once on the 750 test images.
+
+| Metric | Value |
+|---|---|
+| Accuracy | 79.87% (599 of 750) |
+| Macro precision / recall / F1 | 0.805 / 0.799 / 0.797 |
+| Simple baseline (always predict the most common class) | 20.0% |
+
+The test container reproduces these numbers (see `models/final/test_metrics.json`), also in a clean user account. A second model with the same settings, trained inside the training container (`models/docker_final/`), reached 81.34% (606 of 745) on the validation set.
+
+
 
 ## Running without Docker (optional)
 
